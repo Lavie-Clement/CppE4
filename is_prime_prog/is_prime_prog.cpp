@@ -41,9 +41,9 @@ int main()
 
     //std::cout << "donne un chiffre " << std::endl;
 
-    while (std::cin)
+    while (std::cin >> i)
     {
-        std::cin >> i;
+        
         if (IsPrime(i))
         {
             std::string res = std::to_string(i);
