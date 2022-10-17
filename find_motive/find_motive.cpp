@@ -13,7 +13,7 @@ void Find_Motive(string file_path, string motive)
 		cout << "The file " + file_path + " could not be opened." << endl;
 		file.close();
 		return;
-		 
+
 	}
 	else
 	{
@@ -36,6 +36,8 @@ void Find_Motive(string file_path, string motive)
 					{
 						nbFrequence += 1;
 					}
+					message = "";
+
 				}
 			}
 
