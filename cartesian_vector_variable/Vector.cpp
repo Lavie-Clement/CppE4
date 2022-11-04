@@ -16,6 +16,7 @@ Vector::Vector(size_t psize)
     }
 
 }
+
 Vector::Vector(std::initializer_list<value> IL)
 {
     this->size_ = IL.size();
@@ -27,8 +28,15 @@ Vector::Vector(std::initializer_list<value> IL)
     }
 
 }
-
-
+Vector::Vector(const Vector& v)
+{
+    this->size_ = v.size();
+    this->coord = std::make_unique<value[]>(v.size());
+    for (int i = 0; i < v.size(); i++)
+    {
+        this->coord[i] = v.coord[i];
+    }
+}
 // possibly more
 
     // Public Member functions here

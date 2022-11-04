@@ -1,7 +1,7 @@
 // vector-test.cc
 #include <iostream>
 
-#include "vector.hh"
+#include "Vector.hh"
 
 #include <vector>
 #include <cstring> //strcmp
@@ -117,6 +117,7 @@ void testVar(size_t n, size_t dim, int argc, char* argv[])
 
 int main(int argc, char* argv[])
 {
+    
     if (argc <= 3)
         throw std::runtime_error("Expects: first arg, number of elements, "
                                  "Second arg, number of dimension, "
